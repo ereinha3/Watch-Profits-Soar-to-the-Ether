@@ -1,0 +1,33 @@
+CS 472 Final Code Instructions
+Group: Ethan Reinhart, Andrew Wisniewski
+Date: 6/10/2024
+
+Introduction:
+To train and tune our model, we tested and edited our code on kaggle.com. We decided to use Kaggle it allowed us
+to collaborate simultaneously, worked well as a version control. It additionally included all of the dependencies necessary for our code
+to run.
+
+To run on Kaggle or your own machine:
+Download the ethdata directory containing the data csv files. Ensure that your filepath for the data files is correct.
+The line in the code is "df = pd.read_csv(f'./ethdata/{file}')", please change this filepath to wherever you
+have your ethdata directory located.
+
+After completing this step, hitting "Run All" will run the code, displaying the confusion matrix, training the models,
+showing accuracies, and finally the graph.
+
+----------------------------------------------------------------------------------------------------------------------------
+
+During development we separated much of the code, but for simplicity with our submission we implemented one model per block
+of code in the notebook. 
+
+Blocks:
+1. (Andrew) Conjoins the data, displays a confusion matrix.
+2. (Andrew) Displays a graph of historical Ether data.
+3. (Ethan) Creation of the trainArgs class, holds hyperparameters for tuning the model. 
+4. (Ethan/Andrew) Functions for parsing the data, time_step days will be used to make a prediction.
+5. (Ethan) Defining specific hyperparameters for training the models.
+6. (Ethan/Andrew) 1-Feature LSTM model.
+7. (Ethan/Andrew) 2-Feature LSTM model.
+8. (Ethan/Andrew) BiLSTM model.
+9. (Ethan/Andrew) GRU model.
+10. (Ethan/Andrew) Graph of models.
